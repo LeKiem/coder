@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:background="#8303DA40"
+    tools:context=".MainActivity">
+   <TextView
+       android:text="Login"
+       android:textSize="40dp"
+       android:textStyle="bold"
+       android:textColor="@color/black"
+       android:gravity="center"
+       android:layout_marginTop="100dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_marginTop="30dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="UserName"
+          android:textSize="20dp"
+          android:textStyle="bold"
+
+          />
+
+      <EditText
+          android:id="@+id/edit_user"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:hint="Nhap username"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+   </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+   <EditText
+       android:id="@+id/edit_pass"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Nhap Password"
+       android:layout_marginLeft="20dp"
+       android:inputType="textPassword"
+       android:textSize="20dp"
+       android:textStyle="bold" />
+
+</LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="100dp">
+      <Button
+          android:id="@+id/btn_login"
+          android:text="Login"
+          android:textSize="20dp"
+          android:layout_marginLeft="50dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <Button
+          android:id="@+id/btn_cancel"
+          android:text="Cancel"
+          android:textSize="20dp"
+          android:layout_marginLeft="50dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+   </LinearLayout>
+
+</LinearLayout>
